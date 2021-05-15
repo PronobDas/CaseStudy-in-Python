@@ -39,4 +39,20 @@ def count_words_fast(text):
     return word_count
 
 
-print(count_words_fast(text))
+wc = count_words_fast(text)
+
+
+def word_stats(word_counts):
+    """
+    :param word_counts:
+    :return:
+    returns number of unique words and work freq.
+    """
+    num_unique = len(word_counts)
+    counts = word_counts.values()
+    return num_unique, counts
+
+
+(num_unique, counts) = word_stats(wc)
+#print(num_unique)
+#print(sum(counts))

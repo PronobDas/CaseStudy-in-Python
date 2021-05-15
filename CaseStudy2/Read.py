@@ -10,8 +10,8 @@ def read_book(title_path):
     return text
 
 
-text = read_book("books/Romeo and Juliet.txt")
-print(len(text))
+text = read_book("Books/English/shakespeare/Romeo and Juliet.txt")
+#print(len(text))
 
 ind = text.find("What's in a name?")
-print(text[ind:ind+500])
+#print(text[ind:ind+500])
